@@ -22,10 +22,3 @@ class Triangle(Figure):
     @property
     def perimetr(self) -> float:
         return self.__a + self.__b + self.__c
-
-
-triangle_1 = Triangle(20, 15, 30)
-# print(triangle_1)
-triangle_2 = Triangle(3, 5, 7)
-# print(triangle_2)
-print(triangle_1.add_area(triangle_2))
