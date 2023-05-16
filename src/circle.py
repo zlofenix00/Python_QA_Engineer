@@ -13,16 +13,11 @@ class Circle(Figure):
         if not (radius > 0):
             raise ValueError
 
-    @property
-    def area(self) -> float:
+    def get_area(self) -> float:
         return round(math.pi * (self.__radius ** 2), 2)
 
     @property
     def perimetr(self) -> float:
         return round(2 * math.pi * self.__radius, 2)
 
-
-circle = Circle(45.14)
-print(circle.area)
-print(circle.perimetr)
 

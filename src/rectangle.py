@@ -13,8 +13,7 @@ class Rectangle(Figure):
         if not (a > 0 and b > 0):
             raise ValueError
 
-    @property
-    def area(self) -> float:
+    def get_area(self) -> float:
         return self.__a * self.__b
 
     @property

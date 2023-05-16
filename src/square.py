@@ -12,8 +12,7 @@ class Square(Figure):
         if not (a > 0):
             raise ValueError
 
-    @property
-    def area(self) -> float:
+    def get_area(self) -> float:
         return round(self.__a * self.__a, 2)
 
     @property
